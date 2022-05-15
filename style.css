@@ -1,0 +1,192 @@
+body {
+  background-color: white;
+  font-family: 'Caveat', cursive;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.game-table {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-spacing: 5px;
+  border-radius: 10px;
+  box-shadow: 4px 5px 10px 4px rgba(34, 60, 80, 0.2);
+  background-image: url(./img/fon.jpg);
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+  box-shadow: 0 2px 5px #000;
+}
+
+.game-table-appear {
+  opacity: 1;
+}
+
+.game-item {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  border: 1px solid #2E2B44;
+  border-radius: 10px;
+  background-color: #FFCCFF;
+  cursor: pointer;
+  font-size: 40px;
+  text-align: center;
+  box-shadow: 0 2px 5px #000;
+}
+
+.game-item:hover {
+  background-color: #ff91ff;
+}
+
+
+.form {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px;
+  background-image: url(./img/fon.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 4px 5px 10px 4px rgba(34, 60, 80, 0.2);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.form-appear {
+  opacity: 1;
+}
+
+.form__input {
+  caret-color: white;
+  font-weight: 700;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  border: none;
+  cursor: pointer;
+  transition: background-color .5s ease, outline .5s ease;
+  box-shadow: 0 2px 5px #000;
+}
+
+.form__input:hover {
+  background-color: #ffccff;
+}
+
+.form__input:focus {
+  outline: none;
+  border: none;
+  background-color: #ff91ff;
+}
+
+
+.form__title {
+  font-size: 35px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form__text {
+  font-size: 23px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  transition: background-color .5s ease,  font-size .5s ease;
+}
+
+.error {
+  box-shadow: 0 2px 5px #000;
+  background-color: rgba(255, 204, 255, 0.2);
+  border-radius: 20px;
+  font-size: 27px;
+}
+
+.form__replay-btn {
+  display: block;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  background: none;
+  padding: 10px;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: #3498db;
+  color: black;
+  box-shadow: 0 0 10px 0 #ff91ff inset, 0 0 10px 4px #ff91ff;
+  opacity:  0;
+  transition: all 150ms ease-in-out, opacity 1000ms ease;
+}
+
+.form__replay-btn:hover {
+  box-shadow: 0 0 10px 0	#9900FF inset, 0 0 10px 4px	#9900FF;
+}
+
+.form__replay-btn--appear {
+  opacity: 1;
+}
+
+.form__btn {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  background: none;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px inset inset, 0 0 0 0 #FFFF;
+  transition: all 150ms ease-in-out;
+}
+.form__btn:hover {
+  box-shadow: 0 0 10px 0 #FFFF inset, 0 0 10px 4px #FFFF;
+}
+
+
+
+.form__timer-block {
+  cursor: pointer;
+  font-size: 17px;
+  transition: color 0.5s ease;
+}
+
+.form__timer-block:hover {
+  color: #ff91ff;
+}
+
+.form__timer-block--active {
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  line-height: 10px;
+  border-color: #ff91ff;
+}
+
+.form__checkbox {
+  appearance: none;
+}
+
+.table-timer {
+  width: 200px;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  bottom: -15px;
+}
